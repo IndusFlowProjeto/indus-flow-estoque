@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Metalli Steel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Metalli Steel Estoque</h1>
+    <span id="status">Firebase: desconectado</span>
+  </header>
+
+  <main class="dashboard-main">
+    <!-- Order: Laser CNC (Amarelo), Oxicorte (Vermelho), Plasma (Verde) -->
+    <div class="card" onclick="mostrarRegistros('laser')">
+      <h2>Laser CNC (Amarelo)</h2>
+      <p id="count-laser">0 peças</p>
+    </div>
+
+    <div class="card" onclick="mostrarRegistros('oxicorte')">
+      <h2>Oxicorte (Vermelho)</h2>
+      <p id="count-oxicorte">0 peças</p>
+    </div>
+
+    <div class="card" onclick="mostrarRegistros('plasma')">
+      <h2>Plasma (Verde)</h2>
+      <p id="count-plasma">0 peças</p>
+    </div>
+  </main>
+
+  <section id="registros">
+    <h3>Registros</h3>
+    <ul id="lista-registros"></ul>
+  </section>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
