@@ -12,8 +12,8 @@ function setCount(elId, value) {
 
 // Map leituras keys -> card element id and registros tipo
 const map = {
-  amarelo: { countId: 'count-laser', registrosTipo: 'laser' },   // amarelo => Laser CNC
-  vermelho: { countId: 'count-oxicorte', registrosTipo: 'oxicorte' }, // vermelho => Oxicorte
+  dourado: { countId: 'count-laser', registrosTipo: 'laser' },   // dourado => Laser CNC
+  cinza: { countId: 'count-oxicorte', registrosTipo: 'oxicorte' }, // cinza => Oxicorte
   verde: { countId: 'count-plasma', registrosTipo: 'plasma' }    // verde => Plasma
 };
 
